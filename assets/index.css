@@ -1,0 +1,146 @@
+/* 背景 */
+#game {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image: url('../../images/sky.png');
+}
+
+/* 小鸟 */
+.bird {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  margin-left: -15px;
+  width: 30px;
+  height: 30px;
+  background-image: url('../../images/birds.png');
+}
+
+/* 点击开始 */
+.start {
+  position: absolute;
+  top: 295px;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+/* 点击开始的白色样式 */
+.start.start-white {
+  color: #fff;
+  font-size: 24px;
+}
+
+/* 点击开始的蓝色样式 */
+.start.start-blue {
+  color: #09f;
+  font-size: 36px;
+}
+
+/* 分数 */
+.score {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+/* 结束游戏时的背景蒙版 */
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+/* 结束游戏时的模板 */
+.end {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+/* 结束游戏的Game Over字体 */
+.end .over {
+  font-size: 35px;
+  font-weight: bolder;
+  color: red;
+}
+
+/* 结束游戏的Your Results 和 结束分数字体 */
+.end .result,
+.end .final-score {
+  margin-top: 20px;
+  color: #ff0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 排行列表 */
+.end .rank-list {
+  margin-top: 20px;
+  color: #09f;
+  text-align: left;
+}
+
+/* 排行榜每一列 */
+.end .rank-item {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* 排行名次的样式 */
+.end .rank-degree {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  margin-right: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  background-color: #8eb9f5;
+}
+
+/* 第一名名次样式 */
+.end .rank-degree.first {
+  background-color: #f54545;
+}
+
+/* 第二名名次样式 */
+.end .rank-degree.second {
+  background-color: #ff8547;
+}
+
+/* 第三名名次样式 */
+.end .rank-degree.third {
+  background-color: #ffac38;
+}
+
+/* 排行榜分数 */
+.end .rank-score {
+  width: 30px;
+  display: inline-block;
+}
+
+.end .restart {
+  color: #09f;
+  font-size: 18px;
+  font-weight: bolder;
+  cursor: pointer;
+}
